@@ -1,0 +1,146 @@
+[
+    <x^2 - x + 1, 1>,
+    <x^4 + x^3 - 4*x^2 - 3*x + 9, 1>
+]
+{@ (1 : -1 : 0), (1 : 1 : 0), (0 : -3 : 1), (0 : 3 : 1), (1 : -2 : 1), (1 : 2 : 
+1), (-2 : -7 : 1), (-2 : 7 : 1), (3 : -21 : 2), (3 : 21 : 2), (-5 : -154 : 3), 
+(-5 : 154 : 3) @}
+Set of x-coordinates: { (1 : 1), (-2 : 1), (3/2 : 1), (1 : 0), (0 : 1), (-5/3 : 
+1) }
+Productive deltas = [
+    1,
+    -theta + 3/2,
+    -theta,
+    -theta - 2
+]
+x^4 + x^3 - 4*x^2 - 3*x + 9
+[
+    <$.1 - K.1, 1>,
+    <$.1 + 1/3*(-K.1^3 - K.1^2 + 4*K.1 + 3), 1>,
+    <$.1^2 - $.1 + 1, 1>,
+    <$.1^2 + 1/3*(K.1^3 + K.1^2 - K.1)*$.1 - 3, 1>
+]
+$.1^4 + 1/3*(K.1^3 + K.1^2 - K.1 - 3)*$.1^3 + 1/3*(-K.1^3 - K.1^2 + K.1 - 
+    6)*$.1^2 + 1/3*(K.1^3 + K.1^2 - K.1 + 9)*$.1 - 3
+[
+    1,
+    1/16*(14*K.1^3 + 14*K.1^2 - 14*K.1 - 21),
+    -3,
+    1/3*(-14*K.1^3 - 14*K.1^2 + 14*K.1 + 21)
+]
+[
+    { (1 : 1), (1 : 0), (-5/3 : 1) },
+    { (3/2 : 1) },
+    { (0 : 1) },
+    { (-2 : 1) }
+]
+
+
+Using model [
+1/3*(2*F.1^3 + 2*F.1^2 - 2*F.1 - 6),
+2*F.1^3 + 2*F.1^2 - 2*F.1 + 14,
+10*F.1^3 + 10*F.1^2 - 10*F.1 + 22,
+17*F.1^3 + 17*F.1^2 - 17*F.1 + 223,
+0
+]
+Torsion Subgroup = Z/2
+The 2-Selmer group has rank 2
+New point of infinite order (x = 3*$.1^3 + 3*$.1^2 - 3*$.1 - 19)
+After 2-descent: 
+    1 <= Rank(E) <= 1
+    Sha(E)[2] is trivial
+(Searched up to height 16 on the 2-coverings.)
+
+Rank for twist= 1 = [ 1, 1 ]
+Abelian Group isomorphic to Z/2 + Z
+Defined on 2 generators
+Relations:
+    2*G.1 = 0
+[ (1/4*(-K.1^3 - K.1^2 + K.1 + 1) : 1/3*(-2*K.1^3 - 2*K.1^2 + 2*K.1 - 6) : 1), 
+(1/4*(3*K.1^3 + 3*K.1^2 - 3*K.1 - 19) : 1/2*(-K.1^3 - K.1^2 + K.1 - 15) : 1) ]
+supp(R) = [ 2, 3 ]
+Verify Saturation= true
+Solutions for twist  1  =  { (1 : 1), (1 : 0), (-5/3 : 1) }
+
+Using model [
+14*F.1^3 + 14*F.1^2 - 14*F.1 + 6,
+-126*F.1^3 - 126*F.1^2 + 126*F.1 - 1746,
+-6174*F.1^3 - 6174*F.1^2 + 6174*F.1 + 7614,
+-47439*F.1^3 - 47439*F.1^2 + 47439*F.1 + 944703,
+0
+]
+Torsion Subgroup = Z/2
+The 2-Selmer group has rank 2
+After 2-descent: 
+    0 <= Rank(E) <= 1
+    Sha(E)[2] <= (Z/2)^1
+(Searched up to height 16 on the 2-coverings.)
+After more searching:
+    0 <= Rank(E) <= 1
+    Sha(E)[2] <= (Z/2)^1
+(Searched up to height 16 on the 2-coverings.)
+
+Rank for twist= 2 = [ 0, 1 ]
+Solutions for twist  2  =  { (3/2 : 1) }
+
+Using model [
+1/3*(-2*F.1^3 - 2*F.1^2 + 2*F.1 - 18),
+1/3*(-10*F.1^3 - 10*F.1^2 + 10*F.1 - 102),
+1/3*(-70*F.1^3 - 70*F.1^2 + 70*F.1 + 678),
+65*F.1^3 + 65*F.1^2 - 65*F.1 + 1967,
+0
+]
+Torsion Subgroup = Z/2
+The 2-Selmer group has rank 2
+New point of infinite order (x = 1/3*(113*$.1^3 + 113*$.1^2 - 113*$.1 + 195))
+After 2-descent: 
+    1 <= Rank(E) <= 1
+    Sha(E)[2] is trivial
+(Searched up to height 16 on the 2-coverings.)
+
+Rank for twist= 3 = [ 1, 1 ]
+Abelian Group isomorphic to Z/2 + Z
+Defined on 2 generators
+Relations:
+    2*G.1 = 0
+[ (1/3*(5*K.1^3 + 5*K.1^2 - 5*K.1 - 21) : 16*K.1^3 + 16*K.1^2 - 16*K.1 - 144 : 
+    1), (1/3*(113*K.1^3 + 113*K.1^2 - 113*K.1 + 195) : -440*K.1^3 - 440*K.1^2 + 
+    440*K.1 + 288 : 1) ]
+supp(R) = [ 2, 3 ]
+Verify Saturation= true
+Solutions for twist  3  =  { (0 : 1) }
+
+Using model [
+1/3*(28*F.1^3 + 28*F.1^2 - 28*F.1 - 108),
+56*F.1^3 + 56*F.1^2 - 56*F.1 - 808,
+-2576*F.1^3 - 2576*F.1^2 + 2576*F.1 + 6928,
+-14000*F.1^3 - 14000*F.1^2 + 14000*F.1 + 139696,
+0
+]
+Torsion Subgroup = Z/2
+The 2-Selmer group has rank 2
+New point of infinite order (x = 0)
+After 2-descent: 
+    1 <= Rank(E) <= 1
+    Sha(E)[2] is trivial
+(Searched up to height 16 on the 2-coverings.)
+
+Rank for twist= 4 = [ 1, 1 ]
+Abelian Group isomorphic to Z/2 + Z
+Defined on 2 generators
+Relations:
+    2*G.1 = 0
+[ (28*K.1^3 + 28*K.1^2 - 28*K.1 + 292 : 1/3*(112*K.1^3 + 112*K.1^2 - 112*K.1 + 
+    12432) : 1), (0 : 0 : 1) ]
+supp(R) = [ 2, 3, 5 ]
+Verify Saturation= true
+Solutions for twist  4  =  { (-2 : 1) }
+[
+    1,
+    1/16*(14*K.1^3 + 14*K.1^2 - 14*K.1 - 21),
+    -3,
+    1/3*(-14*K.1^3 - 14*K.1^2 + 14*K.1 + 21)
+]
+{ (3/2 : 1), (1 : 1), (0 : 1), (-2 : 1), (1 : 0), (-5/3 : 1) }
+
+Total time: 36.559 [39.247] seconds, Total memory usage: 85.16MB

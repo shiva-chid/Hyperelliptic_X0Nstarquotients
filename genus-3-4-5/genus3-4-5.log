@@ -1,0 +1,46 @@
+Magma V2.26-10    Wed Mar  9 2022 12:33:26 on host     [Seed = 1192080771]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "genus3-4-5.m"
+0 0
+4
+4
+4
+MatrixGroup<3, RationalField() |
+    Matrix(RationalField(), 3, 3, [ 0, 0, -1, 0, -1, 0, -1, 0, 0 ]) >
+2
+0 0
+4
+((x + 1)/(x - 1) : 4/(x^4 - 4*x^3 + 6*x^2 - 4*x + 1)*y : 1)
+MatrixGroup<3, RationalField() |
+    Matrix(RationalField(), 3, 3, [ -1/2, -1, -1/2, -1/2, 0, 1/2, -1/2, 1, -1/2 
+    ]) >
+4
+0 0
+4
+4
+MatrixGroup<3, RationalField() |
+    Matrix(RationalField(), 3, 3, [ 0, 0, -1, 0, -1, 0, -1, 0, 0 ]) >
+4
+[ <2, 12> ]
+1
+1
+{ (1 : 1 : 1), (-3 : 11 : 1), (1 : -1 : 0), (1 : 1 : 0), (1 : -1 : 1), (-3 : -11
+: 1) }
+{ 43 }
+[ 23 ]
+{ (-2 : -4 : 1), (0 : 4 : 1), (2 : -44 : 3), (-2 : 4 : 1), (2 : 44 : 3), (0 : -4
+: 1) }
+{ 43 }
+[ 23 ]
+0
+0
+{@ @}
+{@ @}
+true 1
+false
+false
+true 0
+false
+
+Total time: 8.839 seconds, Total memory usage: 184.72MB

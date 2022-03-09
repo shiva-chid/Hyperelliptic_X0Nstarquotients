@@ -1,0 +1,179 @@
+Loading "qc_modular.m"
+Loading "coleman.m"
+Loading "auxpolys.m"
+Loading "coho.m"
+Loading "froblift.m"
+Loading "reductions.m"
+Loading "singleintegrals.m"
+Loading "misc.m"
+Loading "applications.m"
+Loading "symplectic_basis.m"
+Loading "hecke_correspondence.m"
+Loading "hodge.m"
+Loading "frobenius.m"
+Loading "heights.m"
+Loading "second_patch_quartic.m"
+Loading "divisor_heights.m"
+Loading "qc_init_g2.m"
+Loading "mws_qc.m"
+Loading "howe_zhu.m"
+X_0(177)^*:
+Trying transformation with [ 0, 1, 1, 2 ].
+Using base point [ 0, -1 ].
+ Computing Hodge filtration for correspondence 1.
+ eta =  (0).
+ beta_fil  =  (0 0).
+ gamma_fil =  (-20*x     0).
+
+ Computing Frobenius structure for correspondence 1.
+ The quadratic Chabauty function for correspondence 1 is correct to precision 
+5^7.
+ All roots of the quadratic Chabauty function(s) are correct to precision at 
+least 5^6.
+
+ The common roots of the quadratic Chabauty function(s) in this affine patch are
+ [
+[ O(5^7), -1 + O(5^7) ],
+[ O(5^7), 1 + O(5^7) ],
+[ 37233 + O(5^7), -23392 + O(5^7) ],
+[ -39062 + O(5^7), -29297 + O(5^7) ],
+[ 37233 + O(5^7), 23392 + O(5^7) ],
+[ -39062 + O(5^7), 29297 + O(5^7) ],
+[ -24199 + O(5^7), -15311 + O(5^7) ],
+[ 11161 + O(5^7), 13894 + O(5^7) ],
+[ -24199 + O(5^7), 15311 + O(5^7) ],
+[ 11161 + O(5^7), -13894 + O(5^7) ]
+] 
+
+There are 0 bad Q_5-points.
+There are 0 bad Q-points : []
+Using transformation with [ 0, 1, 1, 2 ].
+Using X: Hyperelliptic Curve defined by y^2 = 177*x^6 - 354*x^5 + 329*x^4 - 
+182*x^3 + 62*x^2 - 12*x + 1 over Rational Field
+The Jacobian of X is absolutely simple.
+There are 6 points of height <= 1000:
+{@ (0 : -1 : 1), (0 : 1 : 1), (1 : -1 : 2), (1 : 1 : 2), (2 : -17 : 7), (2 : 17 
+: 7) @}
+Time: 7.870
+Using p in [ 5 ].
+Using base point [ 0, -1 ].
+Use independent points [* [*
+[
+[ 0, 1 ]
+],
+[
+[ 2/7, -17/343 ]
+]
+*], [*
+[
+[ 1/2, 1/8 ]
+],
+[
+[ 0, 1 ]
+]
+*] *]
+splitting indices: [
+[ 3, 1 ],
+[ -1, 0 ]
+]
+index in J(Q): 1
+Computing Coleman data with N1 = 20.
+
+Starting quadratic Chabauty for p = 5.
+ Computing Hodge filtration for correspondence 1.
+ eta =  (0).
+ beta_fil  =  (0 0).
+ gamma_fil =  (-20*x     0).
+
+ Computing Frobenius structure for correspondence 1.
+ The quadratic Chabauty function for correspondence 1 is correct to precision 
+5^12.
+ All roots of the quadratic Chabauty function(s) are correct to precision at 
+least 5^11.
+
+ The common roots of the quadratic Chabauty function(s) in this affine patch are
+ [
+[ O(5^12), -1 + O(5^12) ],
+[ O(5^12), 1 + O(5^12) ],
+[ 42146608 + O(5^12), 66539108 + O(5^12) ],
+[ -122070312 + O(5^12), 30517578 + O(5^12) ],
+[ 42146608 + O(5^12), -66539108 + O(5^12) ],
+[ -122070312 + O(5^12), -30517578 + O(5^12) ],
+[ -74633574 + O(5^12), 70922189 + O(5^12) ],
+[ -69754464 + O(5^12), 97513894 + O(5^12) ],
+[ -74633574 + O(5^12), -70922189 + O(5^12) ],
+[ -69754464 + O(5^12), -97513894 + O(5^12) ]
+] 
+
+There are 4 fake rational points: [*
+[ 42146608 + O(5^12), 66539108 + O(5^12) ],
+[ 42146608 + O(5^12), -66539108 + O(5^12) ],
+[ -74633574 + O(5^12), 70922189 + O(5^12) ],
+[ -74633574 + O(5^12), -70922189 + O(5^12) ]
+*]
+There are 0 bad Q_5-points.
+Re-computing Coleman data with N2 = 8.
+compute basis integrals
+compute integrals for rational points
+rational integrals [
+    (3688*5 + O(5^7) 7387*5 + O(5^7) 23019 + O(5^7) 13516 + O(5^7)),
+    (-1691*5 + O(5^7) 2848*5 + O(5^7) 24631 + O(5^7) -32627 + O(5^7)),
+    (-13628*5 + O(5^8) 2047*5^2 + O(5^8) -4344*5^2 + O(5^8) -175361 + O(5^8)),
+    (O(5^8) O(5^8) O(5^8) O(5^8)),
+    (-3076*5 + O(5^7) 3154*5 + O(5^7) -38167 + O(5^7) 6041*5 + O(5^7)),
+    (5073*5 + O(5^7) 7081*5 + O(5^7) 7692 + O(5^7) 28809 + O(5^7))
+]
+compute integrals for fake rational points
+fake integrals [
+    (412*5^2 + O(5^7) 4646*5 + O(5^7) 20116 + O(5^7) 14173 + O(5^7)),
+    (-63*5 + O(5^7) 5589*5 + O(5^7) 27534 + O(5^7) -33284 + O(5^7)),
+    (263*5 + O(5^6) -1312*5 + O(5^6) 4538 + O(5^6) -373*5 + O(5^6)),
+    (-1391*5 + O(5^6) -953*5 + O(5^6) -3763 + O(5^6) -1621 + O(5^6))
+]
+
+Use the Mordell-Weil sieve to show that the additional [ 4 ] solutions aren't 
+rational.
+generating cosets ...
+number of cosets: 4
+adding information modulo 1
+number of cosets: 4
+sieving with S = [ 19, 23, 29, 31, 53, 97, 101, 103, 109, 163, 179, 211, 229, 
+311, 313, 397, 683, 1013, 1031, 1291, 1307, 1367, 1373, 1493, 1531 ]
+gcd(#J(F_ell), #J(F_q)) (ell in S, q | MM') = 1
+with [#J(F_v) : v in S] = [
+[ <5, 2, 19>, <19, 1, 25> ],
+[ <5, 1, 151>, <151, 1, 5> ],
+[ <5, 1, 101>, <101, 1, 5> ],
+[ <5, 1, 191>, <191, 1, 5> ],
+[ <5, 1, 499>, <499, 1, 5> ],
+[ <5, 2, 361>, <19, 2, 25> ],
+[ <2, 2, 2745>, <3, 2, 1220>, <5, 1, 2196>, <61, 1, 180> ],
+[ <2, 2, 2755>, <5, 1, 2204>, <19, 1, 580>, <29, 1, 380> ],
+[ <5, 1, 2759>, <31, 1, 445>, <89, 1, 155> ],
+[ <3, 2, 3295>, <5, 1, 5931>, <659, 1, 45> ],
+[ <5, 1, 6841>, <6841, 1, 5> ],
+[ <3, 2, 5255>, <5, 1, 9459>, <1051, 1, 45> ],
+[ <5, 1, 11759>, <11, 1, 5345>, <1069, 1, 55> ],
+[ <5, 5, 31>, <31, 1, 3125> ],
+[ <5, 1, 20771>, <20771, 1, 5> ],
+[ <5, 2, 6241>, <79, 2, 25> ],
+[ <3, 2, 46225>, <5, 2, 16641>, <43, 2, 225> ],
+[ <2, 4, 65025>, <3, 2, 115600>, <5, 2, 41616>, <17, 2, 3600> ],
+[ <5, 3, 8201>, <59, 1, 17375>, <139, 1, 7375> ],
+[ <2, 2, 425475>, <3, 2, 189100>, <5, 2, 68076>, <31, 1, 54900>, <61, 1, 27900> 
+],
+[ <2, 2, 455625>, <3, 6, 2500>, <5, 4, 2916> ],
+[ <3, 2, 209275>, <5, 2, 75339>, <11, 1, 171225>, <761, 1, 2475> ],
+[ <5, 3, 14579>, <61, 1, 29875>, <239, 1, 7625> ],
+[ <5, 2, 86111>, <86111, 1, 25> ],
+[ <2, 4, 140625>, <3, 2, 250000>, <5, 6, 144> ]
+]
+and gcd_v(#J(F_v)) = [ <5, 1> ]
+starting Mordell Weil sieve
+  4 cosets eliminated at v = 19
+        0 cosets remaining after v=19
+Time: 0.000
+done with the MW sieve: true
+No additional solutions are rational.
+
+Total time: 21.780 seconds, Total memory usage: 129.53MB

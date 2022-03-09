@@ -1,0 +1,125 @@
+[
+    <x^2 + x + 1, 1>,
+    <x^4 - x^3 + 8*x^2 + 3*x + 9, 1>
+]
+{@ (1 : -1 : 0), (1 : 1 : 0), (-1 : -4 : 1), (-1 : 4 : 1), (0 : -3 : 1), (0 : 3 
+: 1), (7 : -3497 : 8), (7 : 3497 : 8) @}
+Set of x-coordinates: { (1 : 0), (-1 : 1), (0 : 1), (7/8 : 1) }
+Productive deltas = [
+    1,
+    -theta - 1,
+    -theta
+]
+x^4 - x^3 + 8*x^2 + 3*x + 9
+[
+    <$.1 - K.1, 1>,
+    <$.1 + 1/3*(-K.1^3 + K.1^2 - 8*K.1 - 3), 1>,
+    <$.1 + 1/12*(K.1^3 + 2*K.1^2 + 14*K.1 + 9), 1>,
+    <$.1 + 1/4*(K.1^3 - 2*K.1^2 + 10*K.1 - 3), 1>,
+    <$.1^2 + $.1 + 1, 1>
+]
+$.1^3 + 1/4*(K.1^3 - 2*K.1^2 + 10*K.1 + 1)*$.1^2 + 1/4*(K.1^3 - 2*K.1^2 + 10*K.1
+    + 1)*$.1 + 1/4*(K.1^3 - 2*K.1^2 + 10*K.1 - 3)
+[
+    1,
+    1/4*(K.1^3 - 2*K.1^2 + 10*K.1 - 7),
+    1/4*(K.1^3 - 2*K.1^2 + 10*K.1 - 3)
+]
+[
+    { (1 : 0) },
+    { (1 : 0), (-1 : 1) },
+    { (1 : 0), (0 : 1) }
+]
+
+Using model [
+0,
+1/4*(F.1^3 - 2*F.1^2 + 10*F.1 + 1),
+0,
+1/4*(F.1^3 - 2*F.1^2 + 10*F.1 + 1),
+1/4*(F.1^3 - 2*F.1^2 + 10*F.1 - 3)
+]
+Torsion Subgroup = Z/2
+The 2-Selmer group has rank 2
+New point of infinite order (x = 1/20*(-5*$.1^3 + 21*$.1^2 - 47*$.1 + 51))
+After 2-descent: 
+    1 <= Rank(E) <= 1
+    Sha(E)[2] is trivial
+(Searched up to height 16 on the 2-coverings.)
+
+Rank for twist= 1 = [ 1, 1 ]
+Abelian Group isomorphic to Z/2 + Z
+Defined on 2 generators
+Relations:
+    2*G.1 = 0
+[ (1/4*(-K.1^3 + 2*K.1^2 - 10*K.1 + 3) : 0 : 1), (1/20*(-5*K.1^3 + 21*K.1^2 - 
+    47*K.1 + 51) : 1/200*(-97*K.1^3 + 133*K.1^2 - 645*K.1 + 549) : 1) ]
+supp(R) = [ 2, 3 ]
+Verify Saturation= true
+Solutions for twist  1  =  { (1 : 0) }
+
+Using model [
+0,
+1/4*(-3*F.1^3 + 2*F.1^2 - 18*F.1 - 31),
+0,
+1/2*(-F.1^3 + 8*F.1^2 - 20*F.1 + 53),
+1/4*(33*F.1^3 - 78*F.1^2 + 302*F.1 - 195)
+]
+Torsion Subgroup = Z/2
+The 2-Selmer group has rank 3
+New point of infinite order (x = 1/4*(-$.1^3 + 2*$.1^2 - 10*$.1 + 7))
+New point of infinite order (x = 1/3*(-$.1^3 + $.1^2 - 11*$.1 - 6))
+After 2-descent: 
+    2 <= Rank(E) <= 2
+    Sha(E)[2] is trivial
+(Searched up to height 16 on the 2-coverings.)
+
+Rank for twist= 2 = [ 2, 2 ]
+Abelian Group isomorphic to Z/2 + Z + Z
+Defined on 3 generators
+Relations:
+    2*G.1 = 0
+[ (K.1^3 - K.1^2 + 7*K.1 + 6 : 0 : 1), (1/4*(-K.1^3 + 2*K.1^2 - 10*K.1 + 7) : 
+1/4*(5*K.1^3 - 6*K.1^2 + 38*K.1 + 17) : 1), (1/3*(-K.1^3 + K.1^2 - 11*K.1 - 6) :
+8 : 1) ]
+supp(R) = [ 2, 3, 5 ]
+Verify Saturation= true
+Solutions for twist  2  =  { (-1 : 1), (1 : 0) }
+
+Using model [
+0,
+1/2*(-F.1^3 - 4*F.1 - 15),
+0,
+1/4*(-7*F.1^3 + 18*F.1^2 - 66*F.1 + 45),
+1/4*(31*F.1^3 - 38*F.1^2 + 222*F.1 + 99)
+]
+Torsion Subgroup = Z/2
+The 2-Selmer group has rank 3
+New point of infinite order (x = 1/36*(39*$.1^3 - 46*$.1^2 + 262*$.1 + 127))
+New point of infinite order (x = 1/163805*(-27420*$.1^3 + 184264*$.1^2 - 
+481056*$.1 + 1287396))
+After 2-descent: 
+    2 <= Rank(E) <= 2
+    Sha(E)[2] is trivial
+(Searched up to height 16 on the 2-coverings.)
+
+Rank for twist= 3 = [ 2, 2 ]
+Abelian Group isomorphic to Z/2 + Z + Z
+Defined on 3 generators
+Relations:
+    2*G.1 = 0
+[ (1/4*(3*K.1^3 - 2*K.1^2 + 18*K.1 + 27) : 0 : 1), (1/36*(39*K.1^3 - 46*K.1^2 + 
+    262*K.1 + 127) : 1/27*(-25*K.1^3 + 101*K.1^2 - 291*K.1 + 431) : 1), (0 : 
+1/4*(3*K.1^3 - 2*K.1^2 + 18*K.1 + 27) : 1) ]
+supp(R) = [ 2, 3, 5 ]
+Verify Saturation= true
+Solutions for twist  3  =  { (0 : 1), (1 : 0) }
+[
+    1,
+    1/4*(K.1^3 - 2*K.1^2 + 10*K.1 - 7),
+    1/4*(K.1^3 - 2*K.1^2 + 10*K.1 - 3)
+]
+{ (-1 : 1), (0 : 1), (1 : 0) }
+4
+3
+
+Total time: 25.080 [35.683] seconds, Total memory usage: 85.16MB

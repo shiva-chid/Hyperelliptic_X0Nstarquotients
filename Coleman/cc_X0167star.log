@@ -1,0 +1,59 @@
+Loading "coleman.m"
+Loading "auxpolys.m"
+Loading "coho.m"
+Loading "froblift.m"
+Loading "reductions.m"
+Loading "singleintegrals.m"
+Loading "applications.m"
+L = [
+rec<recformat<x, b, inf, xt, bt, index> | 
+x := O(3^6),
+b := [ 1 + O(3^12), -1 + O(3^12) ],
+inf := true>,
+rec<recformat<x, b, inf, xt, bt, index> | 
+x := O(3^6),
+b := [ 1 + O(3^12), 1 + O(3^12) ],
+inf := true>,
+rec<recformat<x, b, inf, xt, bt, index> | 
+x := O(3^12),
+b := [ 1 + O(3^12), O(3^6) ],
+inf := false>,
+rec<recformat<x, b, inf, xt, bt, index> | 
+x := 1 + O(3^6),
+b := [ 1 + O(3^12), -1 + O(3^7) ],
+inf := false>,
+rec<recformat<x, b, inf, xt, bt, index> | 
+x := 1 + O(3^6),
+b := [ 1 + O(3^12), 1 + O(3^7) ],
+inf := false>
+]
+Q-points = [
+rec<recformat<x, b, inf, xt, bt, index> | 
+x := 1 + O(3^12),
+b := [ 1 + O(3^12), 1 + O(3^12) ],
+inf := false>,
+rec<recformat<x, b, inf, xt, bt, index> | 
+x := 1 + O(3^12),
+b := [ 1 + O(3^12), -1 + O(3^12) ],
+inf := false>,
+rec<recformat<x, b, inf, xt, bt, index> | 
+x := 0,
+b := [ 1 + O(3^12), 0 ],
+inf := false>,
+rec<recformat<x, b, inf, xt, bt, index> | 
+x := 0,
+b := [ 1 + O(3^12), 1 + O(3^12) ],
+inf := true>,
+rec<recformat<x, b, inf, xt, bt, index> | 
+x := 0,
+b := [ 1 + O(3^12), -1 + O(3^12) ],
+inf := true>
+]
+v = [
+[ 1 + O(3^7), O(3^7), O(3^7), 1093 + O(3^7) ],
+[ O(3^7), 1 + O(3^7), O(3^7), O(3^7) ],
+[ O(3^7), O(3^7), 1 + O(3^7), -1 + O(3^7) ]
+]
+found all 5 Q-points!
+
+Total time: 5.169 seconds, Total memory usage: 32.09MB
