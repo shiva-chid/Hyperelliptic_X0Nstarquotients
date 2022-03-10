@@ -1,4 +1,4 @@
--- the files qc_X0Nstar.m carry out quadratic Chabauty for X_0(N)^* (using code by [BDMTV]: https://github.com/steffenmueller/QCMod)
+-- the files qc_X0Nstar.m carry out quadratic Chabauty for X_0(N)^* (using code by [BDMTV]: https://github.com/steffenmueller/QCMod with the only changes contained in qc_init_g2.m.diff)
 
 -- the files elliptic Chabauty/ec_X0Nstar.m carry out elliptic curve Chabauty for X_0(N)^*
 
