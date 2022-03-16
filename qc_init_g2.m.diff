@@ -1,0 +1,12 @@
+274c274
+<   qc_primes := [p : p in gops | #Roots(ChangeRing(f, pAdicField(p))) eq number_of_bad_disks];
+---
+>   qc_primes := [p : p in gops | #Roots(ChangeRing(f, pAdicField(p, 100))) eq number_of_bad_disks];
+305c305
+<   torsion_orders := [Order(A.i) : i in  [1..#Generators(A)] | Order(A.i) gt 0]; 
+---
+>   torsion_orders := [Integers() | Order(A.i) : i in  [1..#Generators(A)] | Order(A.i) gt 0]; 
+309c309
+<   return torsion_bas, torsion_orders, free_gens;
+---
+>   return torsion_bas, torsion_orders, free_gens, psi;
