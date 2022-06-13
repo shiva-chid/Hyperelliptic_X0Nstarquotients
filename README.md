@@ -10,6 +10,8 @@ These are the Magma and log files for our (Nikola Adzaga, Shiva Chidambaram, Tim
 
 -- The file genus-3-4-5/genus3-4-5.m contains an alternative proof for X_0(N)^* of genus > 2.
 
+-- The file IsSemistable.m contains code to check whether a given integral model of a hyperelliptic curve is semistable (used for the local heights away from p in the cases where we apply quadratic Chabauty).
+
 -- The file jinvs.m contains the code to compute the j-invariants.
 
 -- The log files for $file.m are contained in $file.log.
