@@ -15,7 +15,7 @@ assert IsHyperelliptic(X);
 f, h := HyperellipticPolynomials(X);
 assert h eq 0;
 
-// Move rational points away from infinity. If there are no rational points at infinity
+// Move Q_p-rational points away from infinity. If there are no rational points at infinity
 // mod p, then we only need quadratic Chabauty on one affine patch, because the disks at
 // infinity can be handled via the Mordell-Weil sieve.
 
@@ -46,16 +46,6 @@ function find_transformation(X,p)
         assert ptsX[index_of_base_point,3] ne 0;
         base_pt := [ptsX[index_of_base_point,1]/ptsX[index_of_base_point,3], ptsX[index_of_base_point,2]/ptsX[index_of_base_point,3]^(gX+1)]; 
         printf "Using base point %o.\n", base_pt;
-
-        // Compute generators for the full Mordell-Weil group using Stoll's MordellWeilGroupGenus2
-//	printf "computing generators of Mordell-Weil group...\n";
-//        torsion_bas, torsion_orders, bas := generators(J);
-//	printf "computed generators of Mordell-Weil group\n";
-//        assert #bas eq 2; // rank = 2
-        // This spares us the trouble of checking saturation in MW sieve computation.
-//	printf "computing splitting generators...\n";
-//        splitting_generators, divisors, intersections, splitting_indices, odd_divisors_Qp := height_init_g2(Xprime, p, bas: N := N, multiple_bound := 40); 
-//	printf "computed splitting generators\n";
 
       _, _, bad_affine_rat_pts_xy, _, _, bad_Qppoints := QCModAffine(y^2-f, p : printlevel := 1, N := N, prec := 40, base_point := base_pt);
       printf "There are %o bad Q_%o-points.\n", #bad_Qppoints, p;
@@ -99,10 +89,8 @@ qc_primes, groups, good_primes :=
                find_qc_primes(X : mws_primes_bound := 600, qc_primes_bound := 100, number_of_bad_disks := 0, inf_modp_allowed := false,
                                    ordinary := false, known_rat_pts := ptsX, printlevel := 0);
 //printf "You might want to use the primes %o for QC.\n", qc_primes;
-// [ 3, 5, 11, 13, 43, 53, 59, 67, 71, 79, 97 ]
-// 3: Runtime error in 'PointsAtInfinity'
 
-exponents := [1 : p in primes];//[Valuation(#BaseChange(J, GF(p)), p)]; // exponent of p in #J(F_p)?
+exponents := [1 : p in primes];
 printf "Using p in %o.\n", primes;
 S0 := CuspidalSubspace(ModularSymbols(levelN, 2));
 S := S0; // compute the modular symbols space associated to X_0(levelN)^*
