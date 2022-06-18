@@ -4,7 +4,7 @@ These are the Magma and log files for our (Nikola Adzaga, Shiva Chidambaram, Tim
 
 -- The files elliptic Chabauty/ec_X0Nstar.m carry out elliptic curve Chabauty for X_0(N)^* (using code by [BGX21]: https://github.com/XavierXarles/HyperellipticParametrizationsQcurves).
 
--- The files Coleman/cc_X0Nstar.m carry out classical Coleman--Chabauty for X_0(N)^* (using code by [Balakrishnan--Tuitman]: https://github.com/jtuitman/Coleman).
+-- The files Coleman/cc_X0Nstar.m carry out classical Coleman--Chabauty for X_0(N)^* (using code by [Balakrishnan--Tuitman]: https://github.com/jtuitman/Coleman). The file Coleman/diff_of_ratpts.m verifies a hypothesis for this code by checking that differences of rational points on the curve generate a finite index subgroup of the Mordell-Weil group of the Jacobian.
 
 -- The file Coverings/X0N_coverings.m computes X_0(N) -> X_0(N)^* for N = 133, but can be easily adapted for all N such that X_0(N) is non-hyperelliptic.
 
