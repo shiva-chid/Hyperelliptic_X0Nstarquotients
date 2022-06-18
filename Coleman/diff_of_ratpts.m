@@ -8,7 +8,7 @@ assert #ptsJ ne 0;
 
 // Since the Mordell-Weil rank of the Jacobian J of X_0(171)^* is known to be 1,
 // this verifies that differences of rational points on the curve X_0(171)^*
-// generate a finite index subgroup of J.
+// generate a finite index subgroup of Mordell-Weil group of J.
 
 ///////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
@@ -23,14 +23,14 @@ assert #ptsJ ne 0;
 
 // Since the Mordell-Weil rank of the Jacobian J of X_0(176)^* is known to be 1,
 // this verifies that differences of rational points on the curve X_0(176)^*
-// generate a finite index subgroup of J.
+// generate a finite index subgroup of Mordell-Weil group of J.
 
 ///////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
 // The Mordell-Weil rank of the Jacobian J of X_0(279)^* is 2.
 // So it is a little tricky to verify that differences of rational points on the curve
-// generate a finite index subgroup of J.
+// generate a finite index subgroup of Mordell-Weil group of J.
 
 X := SimplifiedModel(X0NQuotient(279,[9,31,279]));
 pts := SetToSequence(Points(X : Bound := 100));
@@ -90,7 +90,7 @@ ChangeRing(mat,GF(3));
 assert Determinant(ChangeRing(mat,GF(3))) ne 0;
 
 // This finishes the verification that differences of rational points on the curve X_0(279)^*
-// generate a finite index subgroup of its Jacobian.
+// generate a finite index subgroup of Mordell-Weil group of its Jacobian.
 
 ///////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
