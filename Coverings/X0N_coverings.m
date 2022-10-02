@@ -7,7 +7,7 @@ N := 133;
 X0N, wqsmat, bas := XZeroN(N);
 number_of_terms := #Eltseq(bas[1]) - 2;
 wqsmat := wqsmat;
-printf "Computing the quotient X_0(N)/W(N) ...\n";
+printf "Computing the quotient X_0(%o)/W(%o) ...\n", N, N;
 g := Dimension(AmbientSpace(X0N)) + 1;
 printf "g = %o\n", g;
 V := VectorSpace(Rationals(), g);
@@ -33,77 +33,77 @@ assert gquot eq 2;
 X0N_WN, xq, yq := HyperellipticModularCurve(basnew_fixed, gquot);
 
 
-Points(X0N_WN : Bound := 10^5);  
+printf "small points on X_0(N)/W(N): %o\n", Points(X0N_WN : Bound := 10^5);  
 coords := [&+[A[i,j] * x[j] : j in [1..g]] : i in [1..g]];  
 // transformed coordinates
 coords_fixed := [coords[i] : i in fixed_vectors];  
 // these are the two linear forms whose quotient gives the map to P¹
-coords_fixed;  
+printf "[i] with x[i] fixed by all Atkin-Lehner operators: %o\n", coords_fixed;  
 S1 := Scheme(X0N, coords_fixed[1]); // x = oo
-time Dimension(S1);  
-time Degree(S1);  
+printf "dimension of fixed scheme of first coordinate: %o\n", Dimension(S1);  
+printf "degree of fixed scheme: %o\n", Degree(S1);  
 time irrS1 := IrreducibleComponents(S1);  
-#irrS1;  
-[<Degree(c), Degree(ReducedSubscheme(c))> : c in irrS1];  
+printf "number of components of fixed scheme: %o\n", #irrS1;  
+printf "with <degree, degree of reduced subscheme>: %o\n", [<Degree(c), Degree(ReducedSubscheme(c))> : c in irrS1];  
 S2 := Scheme(X0N, coords_fixed[2]);
-time Dimension(S2);  
-time Degree(S2);  
+printf "dimension of fixed scheme of second coordinate: %o\n", Dimension(S2);  
+printf "degree of fixed scheme: %o\n", Degree(S2);  
 time irrS2 := IrreducibleComponents(S2);  
-[<Degree(c), Degree(ReducedSubscheme(c))> : c in irrS2];  
+printf "with <degree, degree of reduced subscheme>: %o\n", [<Degree(c), Degree(ReducedSubscheme(c))> : c in irrS2];  
 S0 := S1 meet S2; // the base scheme of the morphism
-Degree(S0);  
+printf "degree of intersection: %o\n", Degree(S0);  
 S1a := Complement(S1, S0); // Difference is better !  
 // Complement subtracts as often as possible, but here part of the
 // fiber we want is contained in the base locus. See later.
-Degree(S1a);  
+//Degree(S1a);  
 S2a := Complement(S2, S0);
-Degree(S2a);  
-[<Degree(c), Degree(ReducedSubscheme(c))> : c in IrreducibleComponents(S1a)];
-[<Degree(c), Degree(ReducedSubscheme(c))> : c in IrreducibleComponents(S2a)];
+//Degree(S2a);  
+//[<Degree(c), Degree(ReducedSubscheme(c))> : c in IrreducibleComponents(S1a)];
+//[<Degree(c), Degree(ReducedSubscheme(c))> : c in IrreducibleComponents(S2a)];
 S3 := Scheme(X0N, coords_fixed[1]-coords_fixed[2]);
-S0 subset S3;  
+assert S0 subset S3;  
 S3a := Complement(S3, S0);
-Degree(S3a);  
-[<Degree(c), Degree(ReducedSubscheme(c))> : c in IrreducibleComponents(S3a)];
+//Degree(S3a);  
+//[<Degree(c), Degree(ReducedSubscheme(c))> : c in IrreducibleComponents(S3a)];
 S4 := Scheme(X0N, 5*coords_fixed[1]-3*coords_fixed[2]);   
-S0 subset S4;   
+assert S0 subset S4;   
 S4a := Complement(S4, S0);   
-Degree(S4a);   
-[<Degree(c), Degree(ReducedSubscheme(c))> : c in IrreducibleComponents(S4a)];
-[<Degree(c), Degree(ReducedSubscheme(c))> : c in IrreducibleComponents(S0)];
+//Degree(S4a);   
+//[<Degree(c), Degree(ReducedSubscheme(c))> : c in IrreducibleComponents(S4a)];
+//[<Degree(c), Degree(ReducedSubscheme(c))> : c in IrreducibleComponents(S0)];
 irrS1a := IrreducibleComponents(S1a);
-MinimalBasis(irrS1a[1]);  
+minbas := MinimalBasis(irrS1a[1]);  
 _<u> := PolynomialRing(Rationals());
-Evaluate($1[#$1], [0,0,0,0,0,0,0,0,0,u,1]);  
-Discriminant(Integers(NumberField($1)));  
+nf := Evaluate(minbas[#minbas], [0,0,0,0,0,0,0,0,0,u,1]);  
+d := Discriminant(Integers(NumberField(nf)));  
 K := NumberField(u^2+u+1);
-Points(irrS1a[1], K);  
-pt1 := $1[1];
-Vector(Eltseq(pt1))*Transpose(ChangeRing(wqsmat[1],K));  
-X0N(K)!Eltseq($1);  
-Vector(Eltseq(pt1))*Transpose(ChangeRing(wqsmat[2],K));  
-X0N(K)!Eltseq($1);  
-Points(irrS1a[2], K);  
+assert SquarefreeFactorization(Discriminant(K)) eq SquarefreeFactorization(d);
+pt1 := Points(irrS1a[1], K)[1];
+//Vector(Eltseq(pt1))*Transpose(ChangeRing(wqsmat[1],K));  
+//X0N(K)!Eltseq($1);  
+//Vector(Eltseq(pt1))*Transpose(ChangeRing(wqsmat[2],K));  
+//X0N(K)!Eltseq($1);
+//Points(irrS1a[2], K);  
 // get four distinct points.
 // look at the other fiber:
 S1aa := Difference(S1, S0); // Difference instead of Complement
-Degree(S1aa);  
+//Degree(S1aa);  
 irrS1aa := IrreducibleComponents(S1aa);
-[<Degree(c), Degree(ReducedSubscheme(c))> : c in irrS1aa];   
+//[<Degree(c), Degree(ReducedSubscheme(c))> : c in irrS1aa];   
 // the first component is new
-MinimalBasis(ReducedSubscheme(irrS1aa[1]));  
-Evaluate($1[#$1], [0,0,0,0,0,0,0,0,0,u,1]);  
-Discriminant(Integers(NumberField($1)));  
+minbas2 := MinimalBasis(ReducedSubscheme(irrS1aa[1]));  
+nf1 := Evaluate(minbas2[#minbas2], [0,0,0,0,0,0,0,0,0,u,1]);  
+d1 := Discriminant(Integers(NumberField(nf1)));  
 K1 := NumberField(u^2 + 19);
-Points(irrS1aa[1], K1);  
-pt1a := $1[1];
-Vector(Eltseq(pt1a))*Transpose(ChangeRing(wqsmat[1],K1));  
-X0N(K1)!Eltseq($1);  
-Vector(Eltseq(pt1a))*Transpose(ChangeRing(wqsmat[2],K1));  
-X0N(K1)!Eltseq($1);  
-$1 eq pt1a;  
+assert SquarefreeFactorization(Discriminant(K1)) eq SquarefreeFactorization(d1);
+pt1a := Points(irrS1aa[1], K1)[1];
+pt1b := X0N(K1)!Eltseq(Vector(Eltseq(pt1a))*Transpose(ChangeRing(wqsmat[1],K1)));  
+pt1c := X0N(K1)!Eltseq(Vector(Eltseq(pt1a))*Transpose(ChangeRing(wqsmat[2],K1)));  
+assert pt1c eq pt1a;  
 // same point --> fixed under the second Atkin-Lehner op.
-Points(S2a); // the rational points on X_0(N)  
+printf "\nX_0(%o)(Q) = %o\n", N, Points(S2a); // the rational points on X_0(N)  
+
+exit;
 
 //// METHOD 1
 
