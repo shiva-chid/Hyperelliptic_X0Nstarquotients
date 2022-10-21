@@ -62,3 +62,20 @@ intrinsic HyperellipticModularCurve(bas::SeqEnum, g::RngIntElt) -> CrvHyp
   assert Genus(C) eq g;
   return C, xq, yq;
 end intrinsic;
+
+/*
+intrinsic HMCurve(bas::SeqEnum, g::RngIntElt) -> CrvHyp
+{ Compute a model of the modular curve X_0(N) over Q.}
+  number_of_terms := #Eltseq(bas[1]) - 2;
+  // compute x, y in terms of f_1, f_2
+  xq := bas[1]/bas[2]; // x(q) = f_1(q)/f_2(q)
+  yq := Parent(xq)!(Parent(xq).1*Derivative(xq)/bas[2]); // y(q) = q x'(q)/f_2(q)
+  // find a hyperelliptic equation of degree 2g + 2
+  mat := Matrix([[Coefficient(xn, j) : j in [-(2*g+2)..number_of_terms-(2*g+2)]] where xn := xq^n : n in [0..2*g+2]]);
+  P<x> := PolynomialRing(Rationals());
+  f1 := P!Eltseq(Solution(mat, Vector([Coefficient(y2, j) : j in [-(2*g+2)..number_of_terms-(2*g+2)]]) where y2 := yq^2));
+  C := HyperellipticCurve(f1);
+  assert Genus(C) eq g;
+  return C, xq, yq;
+end intrinsic;
+*/
